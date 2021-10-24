@@ -1,4 +1,4 @@
-<template>
+<!--template>
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
@@ -84,7 +84,7 @@
       </li>
     </ul>
   </div>
-</template>
+</template-->
 
 <script>
 export default {
