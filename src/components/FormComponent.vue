@@ -4,15 +4,15 @@
     <form>
       <div class="form-group">
         <label for="firstname" class="form-label">First Name:</label>
-        <input type="text" lass="form-control" id="firstname" />
+        <input type="text" lass="form-control" id="firstname" v-model="firstname" />
       </div>
       <div class="form-group">
         <label for="lastname" class="form-label">Last Name:</label>
-        <input type="text" class="form-control" id="lastname" />
+        <input type="text" class="form-control" id="lastname" v-model="lastname"/>
       </div>
       <div class="form-group">
         <label for="DOB" class="form-label">DOB:</label>
-        <input type="text" class="form-control" id="DOB" />
+        <input type="text" class="form-control" id="DOB" v-model="DOB" />
       </div>
       <div class="radiobutton">
         <label class="sr-only">Gender:</label>
@@ -34,6 +34,7 @@
           class="form-control"
           id="exampleFormControlTextarea4"
           rows="3"
+          v-model="Description"
         ></textarea>
       </div>
       <div class="form-group">
@@ -42,6 +43,7 @@
           class="form-control"
           id="exampleFormControlTextarea4"
           rows="3"
+          v-model="address"
         ></textarea>
       </div>
       <button type="submit" class="btn btn-dark">Submit</button>
@@ -59,6 +61,10 @@ export default {
   props: {
     msg: String,
   },
- 
+ data() {
+  return {
+    
+  };
+}
 };
 </script>
