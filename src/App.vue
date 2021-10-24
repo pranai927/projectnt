@@ -4,6 +4,7 @@
     
     <FormComponent />
     <TableComponent />
+    <IdTable />
 
   </div>
 </template>
@@ -12,13 +13,14 @@
 
 import FormComponent from "./components/FormComponent.vue";
 import TableComponent from "./components/TableComponent.vue";
-
+import IdTable  from "./components/IdTable.vue";
 export default {
   name: "App",
   components: {
    
     FormComponent,
      TableComponent,
+     IdTable,
     
   },
 };

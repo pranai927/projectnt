@@ -48,11 +48,7 @@
     </form>
   
  
-    <div v-for="post in posts" v-bind:key="post.id">
-     <div>{{ post.id }}</div>
-     <h2>{{ post.title }}</h2>
-     <div>{{ post.body }}</div>
-    </div>
+   
   </div>
  </div>
 </template>
@@ -63,30 +59,6 @@ export default {
   props: {
     msg: String,
   },
-  data() {
-    return {
-      posts: [],
-    };
-  },
-
-  methods: {
-    async getData() {
-      try {
-        const response = await this.$http.get(
-          "http://jsonplaceholder.typicode.com/posts"
-        );
-        // JSON responses are automatically parsed.
-        this.posts = response.data;
-         
-      } catch (error) {
-        console.log(error);
-      }
-      
-    },
-  },
-
-  created() {
-    this.getData();
-  },
+ 
 };
 </script>
